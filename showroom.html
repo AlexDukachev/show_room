@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category page</title>
+    <title>Showroom page</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet/less" type="text/css" href="less/styles.less" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/4.1.2/less.min.js"></script>
 </head>
@@ -126,158 +126,74 @@
             <div class="container">
                 <ul>
                     <li><a href="#">Главная</a></li>
-                    <li><span>Категория</span></li>
+                    <li><span>Подборка</span></li>
                 </ul>
             </div>
         </div>
         <!-- Breadcrumbs End \\-->
         
-        <!-- Category Content Start \\-->
-        <div class="category-wrapper">
+        <!-- Showroom Content Start \\-->
+        <div class="showroom-wrapper">
             <div class="container d-flex flex-column flex-md-row">
-                <div class="category-image">
-                    <img src="https://html.cwsthemes.com/liami/assets/images/resources/post-img1-1.jpg" alt="Denim Jacket">
+                <div class="showroom-image">
+                    <div class="product-detail-img-nav position-relative">
+                        <div class="product-detail-mini-img overflow-hidden">
+                            <img class="img-fluid w-100" src="https://html.cwsthemes.com/liami/assets/images/resources/product-detail-mini-img1-1.jpg" alt="">
+                        </div>
+                        <div class="product-detail-mini-img overflow-hidden">
+                            <img class="img-fluid w-100" src="https://html.cwsthemes.com/liami/assets/images/resources/product-detail-mini-img1-2.jpg" alt="">
+                        </div>
+                        <div class="product-detail-mini-img overflow-hidden">
+                            <img class="img-fluid w-100" src="https://html.cwsthemes.com/liami/assets/images/resources/product-detail-mini-img1-3.jpg" alt="">
+                        </div>
+                        <div class="product-detail-mini-img overflow-hidden">
+                            <img class="img-fluid w-100" src="https://html.cwsthemes.com/liami/assets/images/resources/product-detail-mini-img1-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="product-detail-big-imgs position-relative">
+                        <div class="product-detail-big-img overflow-hidden">
+                            <img class="img-fluid w-100" src="https://html.cwsthemes.com/liami/assets/images/resources/product-detail-big-img1-1.jpg" alt="">
+                        </div>
+                        <div class="product-detail-big-img overflow-hidden">
+                            <img class="img-fluid w-100" src="https://html.cwsthemes.com/liami/assets/images/resources/product-detail-big-img1-2.jpg" alt="">
+                        </div>
+                        <div class="product-detail-big-img overflow-hidden">
+                            <img class="img-fluid w-100" src="https://html.cwsthemes.com/liami/assets/images/resources/product-detail-big-img1-3.jpg" alt="">
+                        </div>
+                        <div class="product-detail-big-img overflow-hidden">
+                            <img class="img-fluid w-100" src="https://html.cwsthemes.com/liami/assets/images/resources/product-detail-big-img1-4.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="category-info">
-                    <div class="category-title"><h2>Denim Jacket</h2></div>
-                    <div class="category-description">
+                <div class="showroom-info">
+                    <div class="showroom-title"><h2>Denim Jacket</h2></div>
+                    <div class="showroom-categories">
+                        <ul>
+                            <li><a href="#">Категория</a></li>
+                            <li><a href="#">Категория</a></li>
+                            <li><a href="#">Категория</a></li>
+                            <li><a href="#">Категория</a></li>
+                        </ul>
+                    </div>
+                    <div class="showroom-description">
                         <p>Habitasse per feugiat aliquam luctus accumsan curae, suspendisse aliquam taciti eros neque, aenean sit iaculis risus commodo ut sociosqu rhoncus potenti tristique placerat sit tempus, duis erat feugiat cras sociosqu porta ut praesent, fermentum donec convallis tellus vulputate duis nibh rhoncus phasellus dui massa nisl.</p>
+                    </div>
+                    <div class="showroom-favorite">
+                        <button>Добавить в избранное</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Category Content  End \\-->
+        <!-- Showroom Content  End \\-->
         
         <!-- Content Start \\-->
         <div class="container">
             <div class="content">
                 <div class="row">
-                    <div class="col-md-4 col-lg-3 d-flex flex-column">
-                        <div class="product-filter">
-                            <div class="filter-heading">
-                                <span class="filter-title" data-bs-toggle="collapse" aria-expanded="false" class="collapsed" data-bs-target="#filter-box">Фильтр</span>
-                                <button class="btn btn-link filter-reset">Очистить</button>
-                            </div>
-                            <div class="filter-box collapse" id="filter-box">
-                                <div class="accordion accordion-flush" id="filterFlush">
-                                    <div class="filter-item">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-city" aria-expanded="false" aria-controls="flush-city">
-                                            Город
-                                        </button>
-                                        <div id="flush-city" class="collapse" data-bs-parent="#filterFlush">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>
-                                                        <label for="city01" class="filter-name">Город</label>
-                                                        <input type="checkbox" name="city" id="city01">
-                                                    </li>
-                                                    <li>
-                                                        <label for="city02" class="filter-name">Город</label>
-                                                        <input type="checkbox" name="city" id="city02">
-                                                    </li>
-                                                    <li>
-                                                        <label for="city03" class="filter-name">Город</label>
-                                                        <input type="checkbox" name="city" id="city03">
-                                                    </li>
-                                                    <li>
-                                                        <label for="city04" class="filter-name">Город</label>
-                                                        <input type="checkbox" name="city" id="city04">
-                                                    </li>
-                                                    <li>
-                                                        <label for="city05" class="filter-name">Город</label>
-                                                        <input type="checkbox" name="city" id="city05">
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="filter-item">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-type" aria-expanded="false" aria-controls="flush-type">
-                                            Новое/винтаж
-                                        </button>
-                                        <div id="flush-type" class="collapse" data-bs-parent="#filterFlush">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>
-                                                        <label for="type01" class="filter-name">Новое</label>
-                                                        <input type="checkbox" name="type" id="type01">
-                                                    </li>
-                                                    <li>
-                                                        <label for="type02" class="filter-name">Винтаж</label>
-                                                        <input type="checkbox" name="type" id="type02">
-                                                    </li>
-                                                    <li>
-                                                        <label for="type03" class="filter-name">Не важно</label>
-                                                        <input type="checkbox" name="type" id="type03">
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-primary w-100 mt-4 d-block">Показать</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <ul class="list-unstyled category-list d-none d-md-block mt-5" id="category-list">
-                            <li class="has-subcategory">
-                                <a href="#category01" data-bs-toggle="collapse" aria-expanded="false" class="collapsed">Denim Jacket</a>
-                                <ul class="collapse" data-bs-parent="#category-list" id="category01" class="collapse">
-                                    <li><a href="#">Jacket, Women</a></li>
-                                    <li><a href="#">Woolend Jacket</a></li>
-                                    <li><a href="#">Western denim</a></li>
-                                    <li><a href="#">Mini Dresss</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-subcategory">
-                                <a href="#category02" data-bs-toggle="collapse" aria-expanded="false" class="collapsed">Oversize Cotton</a>
-                                <ul class="collapse" data-bs-parent="#category-list" id="category02" class="collapse">
-                                    <li><a href="#">Подкатегория</a></li>
-                                    <li><a href="#">Подкатегория</a></li>
-                                    <li><a href="#">Подкатегория</a></li>
-                                    <li><a href="#">Подкатегория</a></li>
-                                    <li><a href="#">Подкатегория</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dairy & chesse</a></li>
-                            <li><a href="#">Shoulder Bag</a></li>
-                            <li><a href="#">Denim Jacket</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-8 col-lg-9">
-                        <!-- Content Action Start //-->
-                        <div class="content-action mb-5 d-flex align-items-center justify-content-between">
-                            <div class="btn-group">
-                                <button class="btn-primary-link btn-order dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-                                    Сортировка
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
-                                  <li><a class="dropdown-item" href="#">По умолчанию</a></li>
-                                  <li><a class="dropdown-item icon-order" href="#">По алфавиту</a></li>
-                                  <li><a class="dropdown-item icon-order" href="#">Сначала популярные</a></li>
-                                  <li><a class="dropdown-item icon-order" href="#">Новинки</a></li>
-                                </ul>
-                            </div>
-                            <div class="search-box">
-                                <input type="text" name="s" placeholder="Поиск">
-                                <ul class="search-autocomplite">
-                                    <li>Популярное</li>
-                                    <li><a href="#">Название подборки</a></li>
-                                    <li><a href="#">Название подборки</a></li>
-                                    <li><a href="#">Название подборки</a></li>
-                                    <li><a href="#">Название подборки</a></li>
-                                    <li><a href="#">Название подборки</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-end mb-5">
-                            <a href="#mapModal" data-toggle="modal">Показать на карте</a>
-                        </div>
-                        <!-- Content Action End //-->
-
+                    <div class="col-12">
                         <!-- Product List Start //-->
                         <div class="product-list row">
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-9.jpg" alt="">
@@ -303,7 +219,7 @@
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-11.jpg" alt="">
@@ -329,7 +245,7 @@
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-13.jpg" alt="">
@@ -355,7 +271,7 @@
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-15.jpg" alt="">
@@ -381,7 +297,7 @@
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-16.jpg" alt="">
@@ -407,7 +323,7 @@
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-10.jpg" alt="">
@@ -433,7 +349,7 @@
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-detail-big-img1-1.jpg" alt="">
@@ -459,7 +375,7 @@
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-14.jpg" alt="">
@@ -789,12 +705,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.4/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/jquery.touchSwipe.min.js"></script>
     <script>
         (function($) {
             $(document).ready(() => {
+                $(".product-detail-big-imgs").slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    arrows: false,
+                    fade: true,
+                    asNavFor: ".product-detail-img-nav",
+                });
+                $(".product-detail-img-nav").slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    asNavFor: ".product-detail-big-imgs",
+                    dots: false,
+                    arrows: false,
+                    focusOnSelect: true,
+                    vertical: true,
+                    infinite: true,
+                    responsive: [
+                        {
+                            breakpoint: 850,
+                            settings: {
+                                slidesToShow: 4,
+                                slidesToScroll: 1,
+                            },
+                        },
+                        {
+                            breakpoint: 770,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1,
+                            },
+                        },
+                        {
+                            breakpoint: 576,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1,
+                            },
+                        },
+                    ],
+                });
                 $('.related-list').slick({
                     speed: 300,
                     slidesToShow: 6,
@@ -823,26 +780,6 @@
                         }
                     ]
                 })
-            
-                $(".filter-touch").swipe( {
-                    //Generic swipe handler for all directions
-                    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-                        if (direction == 'up') {
-                            $(this).parents('.product-filter').css({
-                                top: 'auto',
-                                bottom: 0
-                            })
-                        }
-                        else if (direction == 'down') {
-                            $(this).parents('.product-filter').css({
-                                top: 'calc(100% - 70px)',
-                                bottom: 0
-                            })
-                        }
-                    },
-                    //Default is 75px, set to 0 for demo so any distance triggers swipe
-                    threshold: 0
-                });
             })
         })(jQuery)
 

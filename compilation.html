@@ -701,57 +701,6 @@
                         }
                     ]
                 })
-
-                $('.hero-slider').slick({
-                    infinite: true,
-                    speed: 300,
-                    rows: 0,
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    variableWidth: true,
-                    nextArrow: '<button class="slick-next slick-arrow" aria-label="Слайдер вперед" type="button"></button>',
-                    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Слайдер назад" type="button"></button>',
-                    responsive: [
-                        {
-                            breakpoint: 1024,
-                            settings: {
-                                slidesToShow: 2,
-                            }
-                        },
-                        {
-                            breakpoint: 600,
-                            settings: {
-                                slidesToShow: 1,
-                            }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 1,
-                            }
-                        }
-                    ]
-                })
-            
-                $(".filter-touch").swipe( {
-                    //Generic swipe handler for all directions
-                    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-                        if (direction == 'up') {
-                            $(this).parents('.product-filter').css({
-                                top: 'auto',
-                                bottom: 0
-                            })
-                        }
-                        else if (direction == 'down') {
-                            $(this).parents('.product-filter').css({
-                                top: 'calc(100% - 70px)',
-                                bottom: 0
-                            })
-                        }
-                    },
-                    //Default is 75px, set to 0 for demo so any distance triggers swipe
-                    threshold: 0
-                });
             })
         })(jQuery)
 
