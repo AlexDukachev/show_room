@@ -1008,30 +1008,41 @@ main {
         .showroom-image {
             display: flex;
 
+            @media (min-width: 768px) and (max-width: 1024px) {
+                flex-direction: column;
+            }
+
+            img { display: flex; }
+
             .product-detail-img-nav {
-                width: 78px;
-                min-width: 78px;
                 margin-right: 24px;
 
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    order: 2;
+                }
+
+                .product-detail-mini-img { 
+                    width: 78px;
+                    min-width: 78px;
+                    cursor: pointer;
+                }
+
                 .slick-slide {
-                    margin-top: 13px;
-                    margin-bottom: 13px;
+                    margin: 13px 0;
+                    overflow: hidden;
+                    display: flex;
                 }
                 
                 .slick-list {
-                    margin-top: -13px;
-                    margin-bottom: -13px;
+                    margin: -13px 0;
                     pointer-events: all;
+                    overflow: hidden;
                 }
             }
 
             .product-detail-big-imgs {
                 max-width: 408px;
                 margin-right: 78px;
-
-                .product-detail-big-img {
-                    max-height: 390px;
-                }
             }
         }
 
@@ -1105,6 +1116,137 @@ main {
                         &::before {
                             background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='%23ECAA02' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.4578 4.59133C19.9691 4.08683 19.3889 3.68663 18.7503 3.41358C18.1117 3.14054 17.4272 3 16.7359 3C16.0446 3 15.3601 3.14054 14.7215 3.41358C14.0829 3.68663 13.5026 4.08683 13.0139 4.59133L11.9997 5.63785L10.9855 4.59133C9.99842 3.57276 8.6596 3.00053 7.26361 3.00053C5.86761 3.00053 4.52879 3.57276 3.54168 4.59133C2.55456 5.6099 2 6.99139 2 8.43187C2 9.87235 2.55456 11.2538 3.54168 12.2724L4.55588 13.3189L11.9997 21L19.4436 13.3189L20.4578 12.2724C20.9467 11.7681 21.3346 11.1694 21.5992 10.5105C21.8638 9.85148 22 9.14517 22 8.43187C22 7.71857 21.8638 7.01225 21.5992 6.35328C21.3346 5.69431 20.9467 5.09559 20.4578 4.59133V4.59133Z' stroke='%23525252' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20.4578 4.59133C19.9691 4.08683 19.3889 3.68663 18.7503 3.41358C18.1117 3.14054 17.4272 3 16.7359 3C16.0446 3 15.3601 3.14054 14.7215 3.41358C14.0829 3.68663 13.5026 4.08683 13.0139 4.59133L11.9997 5.63785L10.9855 4.59133C9.99842 3.57276 8.6596 3.00053 7.26361 3.00053C5.86761 3.00053 4.52879 3.57276 3.54168 4.59133C2.55456 5.6099 2 6.99139 2 8.43187C2 9.87235 2.55456 11.2538 3.54168 12.2724L4.55588 13.3189L11.9997 21L19.4436 13.3189L20.4578 12.2724C20.9467 11.7681 21.3346 11.1694 21.5992 10.5105C21.8638 9.85148 22 9.14517 22 8.43187C22 7.71857 21.8638 7.01225 21.5992 6.35328C21.3346 5.69431 20.9467 5.09559 20.4578 4.59133V4.59133Z' stroke='%23ECAA02' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
                         }
+                    }
+                }
+            }
+        }
+
+        .showroom-stats {
+            max-width: 408px;
+            width: 100%;
+            margin-top: 26px;
+            margin-left: 102px;
+
+            .showroom-rating {
+                display: flex;
+                align-items: center;
+    
+                .rate {
+                    display: flex;
+                    align-items: center;
+                    direction: rtl;
+    
+                    span {
+                        display: flex;
+                        align-items: center;
+    
+                        &::before {
+                            content: '';
+                            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 3.61804L13.7696 9.06434L13.8819 9.40983H14.2451H19.9717L15.3388 12.7758L15.0449 12.9894L15.1572 13.3348L16.9268 18.7812L12.2939 15.4152L12 15.2016L11.7061 15.4152L7.0732 18.7812L8.84282 13.3348L8.95507 12.9894L8.66118 12.7758L4.02828 9.40983H9.75486H10.1181L10.2304 9.06434L12 3.61804Z' stroke='%23C4C4C4'/%3E%3C/svg%3E%0A");
+                            background-repeat: no-repeat;
+                            min-width: 24px;
+                            height: 24px;
+                            display: flex;
+                        }
+    
+                        &.fill {
+                            &::before {
+                                content: '';
+                                background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2L14.2451 8.90983H21.5106L15.6327 13.1803L17.8779 20.0902L12 15.8197L6.12215 20.0902L8.36729 13.1803L2.48944 8.90983H9.75486L12 2Z' fill='%23FFB800'/%3E%3C/svg%3E%0A");
+                                background-repeat: no-repeat;
+                                min-width: 24px;
+                                height: 24px;
+                                display: flex;
+                            }
+                        }
+    
+                        &:hover,
+                        &:hover ~ span {
+                            cursor: pointer;
+    
+                            &::before {
+                                content: '';
+                                background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 3.61804L13.7696 9.06434L13.8819 9.40983H14.2451H19.9717L15.3388 12.7758L15.0449 12.9894L15.1572 13.3348L16.9268 18.7812L12.2939 15.4152L12 15.2016L11.7061 15.4152L7.0732 18.7812L8.84282 13.3348L8.95507 12.9894L8.66118 12.7758L4.02828 9.40983H9.75486H10.1181L10.2304 9.06434L12 3.61804Z' stroke='%23FFB800'/%3E%3C/svg%3E%0A");
+                                background-repeat: no-repeat;
+                                min-width: 24px;
+                                height: 24px;
+                                display: flex;
+                            }
+                        }
+                    }
+    
+                    &::before {
+                        content: '';
+                        width: 1px;
+                        height: 24px;
+                        background-color: #C4C4C4;
+                        transform: rotate(30deg);
+                        margin: 0 6px;
+                    }
+                }
+    
+                .rating {
+                    display: flex;
+                    align-items: flex-start;
+                    font-family: Playfair Display;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16px;
+                    color: #C4C4C4;
+    
+                    &::before {
+                        content: '';
+                        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2L14.2451 8.90983H21.5106L15.6327 13.1803L17.8779 20.0902L12 15.8197L6.12215 20.0902L8.36729 13.1803L2.48944 8.90983H9.75486L12 2Z' fill='%23FFB800'/%3E%3C/svg%3E%0A");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        min-width: 24px;
+                        height: 24px;
+                        display: flex;
+                        margin-right: 4px;
+                    }
+    
+                    @media (min-width: 320px) and (max-width: 540px) {
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        background-color: #FFFFFF;
+                        border-radius: 30px;
+                        padding: 6px 10px;
+                    }
+                }
+            }
+    
+            .showroom-comments {
+                display: flex;
+                align-items: center;
+                font-family: 'Playfair Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+                color: #7B7B7B;
+    
+                .comment-count {
+                    display: flex;
+                    align-items: flex-start;
+                    font-family: Playfair Display;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    color: #C4C4C4;
+                    line-height: 1;
+                    margin-left: 13px;
+    
+                    &::before {
+                        content: '';
+                        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z' stroke='%23C4C4C4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        min-width: 24px;
+                        height: 24px;
+                        display: flex;
+                        margin-right: 4px;
                     }
                 }
             }
@@ -1335,6 +1477,193 @@ main {
                         height: 24px;
                         display: flex;
                         margin-right: 4px;
+                    }
+                }
+            }
+        }
+
+        .showroom-product-list {
+            .product-item {
+                position: relative;
+                margin-bottom: 50px;
+
+                .product-image {
+                    position: relative;
+                    margin-bottom: 16px;
+
+                    .product-info {
+                        position: absolute;
+                        padding: 12px;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: rgb(0,0,0);
+                            background: -moz-linear-gradient(0deg, rgba(0,0,0,0.5508797268907564) 0%, rgba(0,0,0,0.29037552521008403) 100%);
+                            background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.5508797268907564) 0%, rgba(0,0,0,0.29037552521008403) 100%);
+                            background: linear-gradient(0deg, rgba(0,0,0,0.5508797268907564) 0%, rgba(0,0,0,0.29037552521008403) 100%);
+                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+                        }
+
+                        .product-subtitle {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: #FFFFFF;
+                            margin-bottom: 8px;
+                            position: relative;
+                        }
+
+                        .product-except {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #FFFFFF;
+                            position: relative;
+                        }
+                    }
+                }
+
+                .product-title {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #000000;
+                }
+
+                &:hover {
+                    .product-title {
+                        color: #525252;
+                    }
+                }
+            }
+        }
+    }
+
+    .showroom-contacts-wrapper {
+        margin-bottom: 120px;
+
+        h3 {
+            margin-bottom: 32px;
+        }
+
+        .showroom-contacts {
+            background-color: #F2F2F2;
+            display: flex;
+
+            .contacts-map {
+                position: relative;
+                width: 100%;
+                max-width: 526px;
+                display: flex;
+            }
+
+            .contacts-info {
+                padding: 50px 40px 50px 25px;
+                display: flex;
+                flex-direction: column;
+
+                .showroom-title {
+                    font-family: 'Playfair Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #000000;
+                    margin-bottom: 32px;
+                }
+
+                .showroom-description {
+                    font-family: 'Cinzel';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #25282B;
+                    margin-bottom: 40px;
+                }
+
+                .showroom-links {
+                    ul {
+                        display: block;
+
+                        li + li {
+                            margin-top: 12px;
+                        }
+
+                        a {
+                            font-family: 'Cinzel';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: #25282B;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: #525252;
+                            }
+                        }
+                    }
+                }
+
+                .showroom-social {
+                    margin-top: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    ul {
+                        display: flex;
+                        align-items: center;
+
+                        li + li {
+                            margin-left: 30px;
+                        }
+                    }
+
+                    .showroom-page {
+                        font-family: 'Playfair Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 21px;
+                        color: #25282B;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        margin-left: auto;
+
+                        &:hover {
+                            color: #525252;
+                        }
+
+                        &::after {
+                            content: '';
+                            background-image: url("data:image/svg+xml,%3Csvg width='22' height='8' viewBox='0 0 22 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM21.3536 4.35355C21.5488 4.15829 21.5488 3.84171 21.3536 3.64645L18.1716 0.464466C17.9763 0.269204 17.6597 0.269204 17.4645 0.464466C17.2692 0.659728 17.2692 0.976311 17.4645 1.17157L20.2929 4L17.4645 6.82843C17.2692 7.02369 17.2692 7.34027 17.4645 7.53553C17.6597 7.7308 17.9763 7.7308 18.1716 7.53553L21.3536 4.35355ZM1 4.5H21V3.5H1V4.5Z' fill='%2325282B'/%3E%3C/svg%3E");
+                            background-repeat: no-repeat;
+                            min-width: 22px;
+                            height: 8px;
+                            display: flex;
+                            margin-left: 21px;
+                        }
                     }
                 }
             }
