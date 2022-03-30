@@ -1505,6 +1505,8 @@ main {
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-end;
+                        opacity: 0;
+                        transition: opacity .3s;
 
                         &::before {
                             content: '';
@@ -1541,6 +1543,10 @@ main {
                             position: relative;
                         }
                     }
+                }
+
+                &:hover {
+                    .product-info { opacity: 1; }
                 }
 
                 .product-title {
