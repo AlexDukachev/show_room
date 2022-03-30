@@ -176,15 +176,18 @@
                                 <li><a href="#">Категория</a></li>
                             </ul>
                         </div>
+                        <div class="showroom-image-mobile">
+                            <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-detail-big-img1-1.jpg" alt="">
+                        </div>
                         <div class="showroom-description">
                             <p>Habitasse per feugiat aliquam luctus accumsan curae, suspendisse aliquam taciti eros neque, aenean sit iaculis risus commodo ut sociosqu rhoncus potenti tristique placerat sit tempus, duis erat feugiat cras sociosqu porta ut praesent, fermentum donec convallis tellus vulputate duis nibh rhoncus phasellus dui massa nisl.</p>
                         </div>
-                        <div class="showroom-favorite">
+                        <div class="showroom-favorite d-none d-lg-block">
                             <button>Добавить в избранное</button>
                         </div>
                     </div>
                 </div>
-                <div class="showroom-stats d-flex justify-content-between">
+                <div class="showroom-stats d-flex align-items-center justify-content-between">
                     <div class="showroom-rating">
                         <div class="rate">
                             <span></span>
@@ -196,7 +199,11 @@
                         <div class="rating">5</div>
                     </div>
                     <div class="showroom-comments align-items-center">
-                        Комментарии <div class="comment-count">13</div>
+                        <div class="comment-label">Комментарии</div>
+                        <div class="comment-count">13</div>
+                    </div>
+                    <div class="showroom-favorite ms-0 ms-md-auto d-block d-lg-none">
+                        <button>Добавить в избранное</button>
                     </div>
                 </div>
             </div>
@@ -473,6 +480,7 @@
                     <h3>Comments</h3>
                     <button class="comment-anchor">Оставить комментарий</button>
                 </div>
+                <!-- Comments Start //-->
                 <div class="comment-list">
                     <ul>
                         <!-- comment item -->
@@ -481,8 +489,10 @@
                                 <div class="comment-avatar"></div>
                                 <div class="comment-info">
                                     <div class="comment-header">
-                                        <div class="comment-author">Логин пользователя</div>
-                                        <div class="comment-date">10:20 6 июля 2021</div>
+                                        <div class="d-flex flex-column flex-md-row">
+                                            <div class="comment-author">Логин пользователя</div>
+                                            <div class="comment-date">10:20 6 июля 2021</div>
+                                        </div>
                                         <ul class="comment-option">
                                             <li><button class="option-edit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8603 4.71026C17.0855 4.48508 17.3528 4.30646 17.647 4.18459C17.9413 4.06272 18.2566 4 18.575 4C18.8935 4 19.2088 4.06272 19.503 4.18459C19.7972 4.30646 20.0646 4.48508 20.2897 4.71026C20.5149 4.93543 20.6935 5.20276 20.8154 5.49697C20.9373 5.79118 21 6.10651 21 6.42497C21 6.74342 20.9373 7.05875 20.8154 7.35296C20.6935 7.64717 20.5149 7.9145 20.2897 8.13968L8.71545 19.714L4 21L5.28603 16.2845L11.0732 10.4974L16.8603 4.71026Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
                                             <li><button class="option-delete"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.63623H5H21" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6.6V4.8C8 4.32261 8.21071 3.86477 8.58579 3.52721C8.96086 3.18964 9.46957 3 10 3H14C14.5304 3 15.0391 3.18964 15.4142 3.52721C15.7893 3.86477 16 4.32261 16 4.8V6.6M19 6.6V19.2C19 19.6774 18.7893 20.1352 18.4142 20.4728C18.0391 20.8104 17.5304 21 17 21H7C6.46957 21 5.96086 20.8104 5.58579 20.4728C5.21071 20.1352 5 19.6774 5 19.2V6.6H19Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
@@ -507,8 +517,10 @@
                                         <div class="comment-avatar"></div>
                                         <div class="comment-info">
                                             <div class="comment-header">
-                                                <div class="comment-author">Логин пользователя</div>
-                                                <div class="comment-date">10:20 6 июля 2021</div>
+                                                <div class="d-flex flex-column flex-md-row">
+                                                    <div class="comment-author">Логин пользователя</div>
+                                                    <div class="comment-date">10:20 6 июля 2021</div>
+                                                </div>
                                                 <ul class="comment-option">
                                                     <li><button class="option-edit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8603 4.71026C17.0855 4.48508 17.3528 4.30646 17.647 4.18459C17.9413 4.06272 18.2566 4 18.575 4C18.8935 4 19.2088 4.06272 19.503 4.18459C19.7972 4.30646 20.0646 4.48508 20.2897 4.71026C20.5149 4.93543 20.6935 5.20276 20.8154 5.49697C20.9373 5.79118 21 6.10651 21 6.42497C21 6.74342 20.9373 7.05875 20.8154 7.35296C20.6935 7.64717 20.5149 7.9145 20.2897 8.13968L8.71545 19.714L4 21L5.28603 16.2845L11.0732 10.4974L16.8603 4.71026Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
                                                     <li><button class="option-delete"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.63623H5H21" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6.6V4.8C8 4.32261 8.21071 3.86477 8.58579 3.52721C8.96086 3.18964 9.46957 3 10 3H14C14.5304 3 15.0391 3.18964 15.4142 3.52721C15.7893 3.86477 16 4.32261 16 4.8V6.6M19 6.6V19.2C19 19.6774 18.7893 20.1352 18.4142 20.4728C18.0391 20.8104 17.5304 21 17 21H7C6.46957 21 5.96086 20.8104 5.58579 20.4728C5.21071 20.1352 5 19.6774 5 19.2V6.6H19Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
@@ -533,8 +545,10 @@
                                         <div class="comment-avatar"></div>
                                         <div class="comment-info">
                                             <div class="comment-header">
-                                                <div class="comment-author">Логин пользователя</div>
-                                                <div class="comment-date">10:20 6 июля 2021</div>
+                                                <div class="d-flex flex-column flex-md-row">
+                                                    <div class="comment-author">Логин пользователя</div>
+                                                    <div class="comment-date">10:20 6 июля 2021</div>
+                                                </div>
                                                 <ul class="comment-option">
                                                     <li><button class="option-edit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8603 4.71026C17.0855 4.48508 17.3528 4.30646 17.647 4.18459C17.9413 4.06272 18.2566 4 18.575 4C18.8935 4 19.2088 4.06272 19.503 4.18459C19.7972 4.30646 20.0646 4.48508 20.2897 4.71026C20.5149 4.93543 20.6935 5.20276 20.8154 5.49697C20.9373 5.79118 21 6.10651 21 6.42497C21 6.74342 20.9373 7.05875 20.8154 7.35296C20.6935 7.64717 20.5149 7.9145 20.2897 8.13968L8.71545 19.714L4 21L5.28603 16.2845L11.0732 10.4974L16.8603 4.71026Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
                                                     <li><button class="option-delete"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.63623H5H21" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6.6V4.8C8 4.32261 8.21071 3.86477 8.58579 3.52721C8.96086 3.18964 9.46957 3 10 3H14C14.5304 3 15.0391 3.18964 15.4142 3.52721C15.7893 3.86477 16 4.32261 16 4.8V6.6M19 6.6V19.2C19 19.6774 18.7893 20.1352 18.4142 20.4728C18.0391 20.8104 17.5304 21 17 21H7C6.46957 21 5.96086 20.8104 5.58579 20.4728C5.21071 20.1352 5 19.6774 5 19.2V6.6H19Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
@@ -561,8 +575,10 @@
                                 <div class="comment-avatar"></div>
                                 <div class="comment-info">
                                     <div class="comment-header">
-                                        <div class="comment-author">Логин пользователя</div>
-                                        <div class="comment-date">10:20 6 июля 2021</div>
+                                        <div class="d-flex flex-column flex-md-row">
+                                            <div class="comment-author">Логин пользователя</div>
+                                            <div class="comment-date">10:20 6 июля 2021</div>
+                                        </div>
                                         <ul class="comment-option">
                                             <li><button class="option-edit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8603 4.71026C17.0855 4.48508 17.3528 4.30646 17.647 4.18459C17.9413 4.06272 18.2566 4 18.575 4C18.8935 4 19.2088 4.06272 19.503 4.18459C19.7972 4.30646 20.0646 4.48508 20.2897 4.71026C20.5149 4.93543 20.6935 5.20276 20.8154 5.49697C20.9373 5.79118 21 6.10651 21 6.42497C21 6.74342 20.9373 7.05875 20.8154 7.35296C20.6935 7.64717 20.5149 7.9145 20.2897 8.13968L8.71545 19.714L4 21L5.28603 16.2845L11.0732 10.4974L16.8603 4.71026Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
                                             <li><button class="option-delete"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.63623H5H21" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6.6V4.8C8 4.32261 8.21071 3.86477 8.58579 3.52721C8.96086 3.18964 9.46957 3 10 3H14C14.5304 3 15.0391 3.18964 15.4142 3.52721C15.7893 3.86477 16 4.32261 16 4.8V6.6M19 6.6V19.2C19 19.6774 18.7893 20.1352 18.4142 20.4728C18.0391 20.8104 17.5304 21 17 21H7C6.46957 21 5.96086 20.8104 5.58579 20.4728C5.21071 20.1352 5 19.6774 5 19.2V6.6H19Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
@@ -583,6 +599,8 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Comments End //-->
+
                 <!-- Pagination Start //-->
                 <ul class="pagination">
                     <!-- <li class="disabled"><span>Предыдущая</span></li> -->
@@ -593,6 +611,23 @@
                     <li><a href="#">Следующая</a></li>
                 </ul>
                 <!-- Pagination End //-->
+
+                <!-- Comment Form Start //-->
+                <div class="comment-form">
+                    <div class="comment-box">
+                        <div class="author-avatar">
+                            <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-14.jpg" alt="">
+                        </div>
+                        <div class="form-body">
+                            <div class="author-name">Логин пользователя</div>
+                            <form action="#" method="post" id="send-comment">
+                                <textarea name="comment" rows="3" placeholder="Написать текст..."></textarea>
+                            </form>
+                        </div>
+                    </div>
+                    <button type="submit" form="send-comment">Отправить комментарий</button>
+                </div>
+                <!-- Comment Form End //-->
             </div>
         </div>
         <!-- Comments End \\-->
@@ -886,7 +921,7 @@
                         {
                             breakpoint: 1024,
                             settings: {
-                                slidesToShow: 3,
+                                slidesToShow: 4,
                             }
                         },
                         {
