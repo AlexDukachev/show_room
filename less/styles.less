@@ -1024,11 +1024,7 @@ main {
         .showroom-image {
             display: flex;
 
-            @media (min-width: 320px) and (max-width: 540px) {
-                display: none;
-            }
-
-            @media (min-width: 768px) and (max-width: 1024px) {
+            @media (min-width: 320px) and (max-width: 1024px) {
                 flex-direction: column;
             }
 
@@ -1045,6 +1041,12 @@ main {
                     min-width: 317px;
                 }
 
+                @media (min-width: 320px) and (max-width: 767px) {
+                    order: 2;
+                    width: 100%;
+                    min-width: 317px;
+                }
+
                 .product-detail-mini-img { 
                     cursor: pointer;
                     width: 76px;
@@ -1053,6 +1055,10 @@ main {
                     align-items: center;
 
                     @media (min-width: 768px) and (max-width: 1024px) {
+                        height: auto;
+                    }
+
+                    @media (min-width: 320px) and (max-width: 767px) {
                         height: auto;
                     }
                 }
@@ -1065,6 +1071,10 @@ main {
                     @media (min-width: 768px) and (max-width: 1024px) {
                         margin: 0 7px;
                     }
+
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        margin: 0 7px;
+                    }
                 }
                 
                 .slick-list {
@@ -1073,6 +1083,10 @@ main {
                     overflow: hidden;
 
                     @media (min-width: 768px) and (max-width: 1024px) {
+                        margin: 0 -7px;
+                    }
+
+                    @media (min-width: 320px) and (max-width: 767px) {
                         margin: 0 -7px;
                     }
                 }
@@ -1087,16 +1101,13 @@ main {
                     margin-right: 16px;
                 }
 
-                @media (min-width: 320px) and (max-width: 540px) {
+                @media (min-width: 320px) and (max-width: 767px) {
                     max-width: 100%;
                     margin-right: 0;
                 }
             }
         }
 
-        .showroom-info {
-            display: flex;
-            flex-direction: column;
 
             .showroom-title {
                 @media (min-width: 320px) and (max-width: 540px) {
@@ -1105,16 +1116,6 @@ main {
                     h2 {
                         margin-bottom: 16px;
                     }
-                }
-            }
-
-            .showroom-image-mobile {
-                display: none;
-                order: 3;
-
-                @media (min-width: 320px) and (max-width: 540px) {
-                    display: block;
-                    margin-bottom: 16px;
                 }
             }
 
@@ -1169,11 +1170,10 @@ main {
             }
 
             .showroom-description {
-                @media (min-width: 320px) and (max-width: 540px) {
-                    order: 4;
+                p:last-child {
+                    margin-bottom: 24px;
                 }
             }
-        }
 
         .showroom-favorite {
             margin-top: auto;
@@ -1219,13 +1219,20 @@ main {
             margin-top: 26px;
             margin-left: 102px;
 
-            @media (min-width: 320px) and (max-width: 540px) {
+            @media (min-width: 320px) and (max-width: 767px) {
                 flex-wrap: wrap;
+                max-width: 100%;
                 order: 3;
+                margin-left: 0;
+                margin-bottom: 24px;
+
+                .comment-label {
+                    display: none;
+                }
             }
 
-            @media (min-width: 320px) and (max-width: 1024px) {
-                max-width: 100%;
+            @media (min-width: 768px) and (max-width: 1024px) {
+                max-width: 317px;
                 margin-top: 24px;
                 margin-left: 0;
 
@@ -2641,5 +2648,44 @@ footer {
         left: 0;
         right: 0;
         bottom: 0;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "image  title"
+                         "image  desc";
+    grid-template-columns: 585px 1fr;
+    grid-template-rows: auto 1fr 30px;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "title"
+                             "image "
+                             "desc";
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        grid-template-columns: 340px 1fr;
+    }
+
+    .one {
+        grid-area: image;
+    }
+
+    .two {
+        grid-area: title;
+    }
+
+    .three {
+        grid-area: desc;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 320px) and (max-width: 540px) {
+            margin-top: 24px;
+        }
+        
     }
 }
