@@ -978,8 +978,9 @@
                 e.stopPropagation()
 
                 document.body.classList.remove('modal-open')
-                document.getElementById('authModal').style.display = ''
-                document.getElementById('mapModal').style.display = ''
+                document.querySelectorAll('.custom-modal').forEach((modal) => {
+                    modal.style.display = ''
+                })
             })
         })
     </script>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category page</title>
+    <title>Compilation page</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,18 +126,18 @@
             <div class="container">
                 <ul>
                     <li><a href="#">Главная</a></li>
-                    <li><span>Категория</span></li>
+                    <li><span>Подборка</span></li>
                 </ul>
             </div>
         </div>
         <!-- Breadcrumbs End \\-->
         
         <!-- Category Content Start \\-->
-        <div class="category-wrapper">
-            <div class="container">
-                <div class="grid">
+        <div class="category-wrapper bg-none">
+            <div class="container-fluid p-xl-0 d-flex flex-column flex-md-row">
+                <div class="grid big">
                     <div class="one">
-                        <div class="category-image">
+                        <div class="category-image big">
                             <img src="https://html.cwsthemes.com/liami/assets/images/resources/post-img1-1.jpg" alt="Denim Jacket">
                         </div>
                     </div>
@@ -157,354 +157,163 @@
         <!-- Content Start \\-->
         <div class="container">
             <div class="content">
+                <div class="tags-wrapper">
+                    <ul>
+                        <li><a href="#">По городам</a></li>
+                        <li><a href="#">По стилю</a></li>
+                        <li><a href="#">По товару</a></li>
+                        <li><a href="#">По товару</a></li>
+                        <li><a href="#">По сезону</a></li>
+                        <li><a href="#">По целевой аудитории</a></li>
+                        <li><a href="#">По сезону</a></li>
+                        <li><a href="#">По стилю</a></li>
+                        <li><a href="#">По сезону</a></li>
+                        <li><a href="#">По городам</a></li>
+                        <li><a href="#">По стилю</a></li>
+                        <li><a href="#">По товару</a></li>
+                        <li><a href="#">По товару</a></li>
+                        <li><a href="#">По сезону</a></li>
+                        <li><a href="#">По целевой аудитории</a></li>
+                        <li><a href="#">По сезону</a></li>
+                        <li><a href="#">По стилю</a></li>
+                        <li><a href="#">По сезону</a></li>
+                        <li><a href="#">По городам</a></li>
+                        <li><a href="#">По стилю</a></li>
+                        <li><a href="#">По товару</a></li>
+                        <li><a href="#">По товару</a></li>
+                        <li><a href="#">По сезону</a></li>
+                        <li><a href="#">По целевой аудитории</a></li>
+                        <li><a href="#">По сезону</a></li>
+                        <li><a href="#">По стилю</a></li>
+                        <li><a href="#">По сезону</a></li>
+                    </ul>
+                </div>
                 <div class="row">
-                    <div class="col-md-4 col-lg-3 d-flex flex-column">
-                        <div class="search-box d-flex d-md-none mb-3">
-                            <input type="text" name="s" placeholder="Поиск">
-                            <ul class="search-autocomplite">
-                                <li>Популярное</li>
-                                <li><a href="#">Название подборки</a></li>
-                                <li><a href="#">Название подборки</a></li>
-                                <li><a href="#">Название подборки</a></li>
-                                <li><a href="#">Название подборки</a></li>
-                                <li><a href="#">Название подборки</a></li>
-                            </ul>
-                        </div>
-                        <div class="product-filter">
-                            <div class="filter-heading">
-                                <span class="filter-title" data-bs-toggle="collapse" aria-expanded="false" class="collapsed" data-bs-target="#filter-box">Фильтр</span>
-                                <button class="btn btn-link filter-reset">Очистить</button>
-                            </div>
-                            <div class="filter-box collapse" id="filter-box">
-                                <div class="accordion accordion-flush" id="filterFlush">
-                                    <div class="filter-item">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-city" aria-expanded="false" aria-controls="flush-city">
-                                            Город
-                                        </button>
-                                        <div id="flush-city" class="collapse" data-bs-parent="#filterFlush">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>
-                                                        <label for="city01" class="filter-name">Город</label>
-                                                        <input type="checkbox" name="city" id="city01">
-                                                    </li>
-                                                    <li>
-                                                        <label for="city02" class="filter-name">Город</label>
-                                                        <input type="checkbox" name="city" id="city02">
-                                                    </li>
-                                                    <li>
-                                                        <label for="city03" class="filter-name">Город</label>
-                                                        <input type="checkbox" name="city" id="city03">
-                                                    </li>
-                                                    <li>
-                                                        <label for="city04" class="filter-name">Город</label>
-                                                        <input type="checkbox" name="city" id="city04">
-                                                    </li>
-                                                    <li>
-                                                        <label for="city05" class="filter-name">Город</label>
-                                                        <input type="checkbox" name="city" id="city05">
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="filter-item">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-type" aria-expanded="false" aria-controls="flush-type">
-                                            Новое/винтаж
-                                        </button>
-                                        <div id="flush-type" class="collapse" data-bs-parent="#filterFlush">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>
-                                                        <label for="type01" class="filter-name">Новое</label>
-                                                        <input type="checkbox" name="type" id="type01">
-                                                    </li>
-                                                    <li>
-                                                        <label for="type02" class="filter-name">Винтаж</label>
-                                                        <input type="checkbox" name="type" id="type02">
-                                                    </li>
-                                                    <li>
-                                                        <label for="type03" class="filter-name">Не важно</label>
-                                                        <input type="checkbox" name="type" id="type03">
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-primary w-100 mt-4 d-block">Показать</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <ul class="list-unstyled category-list d-none d-md-block order-1 order-md-2 mt-4" id="category-list">
-                            <li class="has-subcategory">
-                                <a href="#category01" data-bs-toggle="collapse" aria-expanded="false" class="collapsed">Denim Jacket</a>
-                                <ul class="collapse" data-bs-parent="#category-list" id="category01" class="collapse">
-                                    <li><a href="#">Jacket, Women</a></li>
-                                    <li><a href="#">Woolend Jacket</a></li>
-                                    <li><a href="#">Western denim</a></li>
-                                    <li><a href="#">Mini Dresss</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-subcategory">
-                                <a href="#category02" data-bs-toggle="collapse" aria-expanded="false" class="collapsed">Oversize Cotton</a>
-                                <ul class="collapse" data-bs-parent="#category-list" id="category02" class="collapse">
-                                    <li><a href="#">Подкатегория</a></li>
-                                    <li><a href="#">Подкатегория</a></li>
-                                    <li><a href="#">Подкатегория</a></li>
-                                    <li><a href="#">Подкатегория</a></li>
-                                    <li><a href="#">Подкатегория</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dairy & chesse</a></li>
-                            <li><a href="#">Shoulder Bag</a></li>
-                            <li><a href="#">Denim Jacket</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-8 col-lg-9">
-                        <div class="row">
-                            <!-- Content Action Start //-->
-                            <div class="btn-group mb-5 mb-md-0 col-6 col-md-4 col-lg-6">
-                                <button class="btn-primary-link btn-order dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-                                    Сортировка
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
-                                    <li><a class="dropdown-item" href="#">По умолчанию</a></li>
-                                    <li><a class="dropdown-item icon-order" href="#">По алфавиту</a></li>
-                                    <li><a class="dropdown-item icon-order" href="#">Сначала популярные</a></li>
-                                    <li><a class="dropdown-item icon-order" href="#">Новинки</a></li>
-                                </ul>
-                            </div>
-                            <div class="d-none d-md-block mb-3 mb-md-0 col-12 col-md-7 col-lg-4 offset-md-1 offset-lg-2">
-                                <div class="search-box">
-                                    <input type="text" name="s" placeholder="Поиск">
-                                    <ul class="search-autocomplite">
-                                        <li>Популярное</li>
-                                        <li><a href="#">Название подборки</a></li>
-                                        <li><a href="#">Название подборки</a></li>
-                                        <li><a href="#">Название подборки</a></li>
-                                        <li><a href="#">Название подборки</a></li>
-                                        <li><a href="#">Название подборки</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end mb-5 col-6 col-md-12 mt-0 mt-md-4">
-                                <a href="#mapModal" data-toggle="modal">Показать на карте</a>
-                            </div>
-                            <!-- Content Action End //-->
-                        </div>
-                        <!-- Product List Start //-->
-                        <div class="product-list row">
-                            <div class="col-6 col-lg-4">
+                    <div class="col-12">
+                        <!-- Showroom Product List Start //-->
+                        <div class="showroom-product-list row">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-9.jpg" alt="">
-                                        <button class="product-fav" aria-label="Добавить в избранное"></button>
-                                    </div>
-                                    <div class="d-flex align-items-start justify-content-between">
-                                        <div class="product-title">Cotton Baseball Cap</div>
-                                        <div class="product-rating">5</div>
-                                    </div>
-                                    <div class="product-except">
-                                        Краткое описание
-                                    </div>
-                                    <div class="product-info d-flex align-items-center justify-content-between mt-3">
-                                        <div class="product-rate">
-                                            <span></span>
-                                            <span></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
+                                        <div class="product-info">
+                                            <div class="product-subtitle">Night Summer Dresses</div>
+                                            <div class="product-except">
+                                                Trying something new is never pretty. But it is pretty awesome. Because no matter how many times.
+                                            </div>
                                         </div>
-                                        <div class="product-comment-count">13</div>
                                     </div>
+                                    <div class="product-title">Cotton Baseball Cap</div>
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-11.jpg" alt="">
-                                        <button class="product-fav" aria-label="Добавить в избранное"></button>
-                                    </div>
-                                    <div class="d-flex align-items-start justify-content-between">
-                                        <div class="product-title">Grown cotton T-shirt</div>
-                                        <div class="product-rating">5</div>
-                                    </div>
-                                    <div class="product-except">
-                                        Краткое описание
-                                    </div>
-                                    <div class="product-info d-flex align-items-center justify-content-between mt-3">
-                                        <div class="product-rate">
-                                            <span></span>
-                                            <span></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
+                                        <div class="product-info">
+                                            <div class="product-subtitle">Night Summer Dresses</div>
+                                            <div class="product-except">
+                                                Trying something new is never pretty. But it is pretty awesome. Because no matter how many times.
+                                            </div>
                                         </div>
-                                        <div class="product-comment-count">13</div>
                                     </div>
+                                    <div class="product-title">Grown cotton T-shirt</div>
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-13.jpg" alt="">
-                                        <button class="product-fav" aria-label="Добавить в избранное"></button>
-                                    </div>
-                                    <div class="d-flex align-items-start justify-content-between">
-                                        <div class="product-title">Long strappy dress</div>
-                                        <div class="product-rating">5</div>
-                                    </div>
-                                    <div class="product-except">
-                                        Краткое описание
-                                    </div>
-                                    <div class="product-info d-flex align-items-center justify-content-between mt-3">
-                                        <div class="product-rate">
-                                            <span></span>
-                                            <span></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
+                                        <div class="product-info">
+                                            <div class="product-subtitle">Night Summer Dresses</div>
+                                            <div class="product-except">
+                                                Trying something new is never pretty. But it is pretty awesome. Because no matter how many times.
+                                            </div>
                                         </div>
-                                        <div class="product-comment-count">13</div>
                                     </div>
+                                    <div class="product-title">Long strappy dress</div>
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-15.jpg" alt="">
-                                        <button class="product-fav" aria-label="Добавить в избранное"></button>
-                                    </div>
-                                    <div class="d-flex align-items-start justify-content-between">
-                                        <div class="product-title">Jacket with pouch pockett</div>
-                                        <div class="product-rating">5</div>
-                                    </div>
-                                    <div class="product-except">
-                                        Краткое описание
-                                    </div>
-                                    <div class="product-info d-flex align-items-center justify-content-between mt-3">
-                                        <div class="product-rate">
-                                            <span></span>
-                                            <span></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
+                                        <div class="product-info">
+                                            <div class="product-subtitle">Night Summer Dresses</div>
+                                            <div class="product-except">
+                                                Trying something new is never pretty. But it is pretty awesome. Because no matter how many times.
+                                            </div>
                                         </div>
-                                        <div class="product-comment-count">13</div>
                                     </div>
+                                    <div class="product-title">Jacket with pouch pockett</div>
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-16.jpg" alt="">
-                                        <button class="product-fav" aria-label="Добавить в избранное"></button>
-                                    </div>
-                                    <div class="d-flex align-items-start justify-content-between">
-                                        <div class="product-title">Long Fit T-shirt</div>
-                                        <div class="product-rating">5</div>
-                                    </div>
-                                    <div class="product-except">
-                                        Краткое описание
-                                    </div>
-                                    <div class="product-info d-flex align-items-center justify-content-between mt-3">
-                                        <div class="product-rate">
-                                            <span></span>
-                                            <span></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
+                                        <div class="product-info">
+                                            <div class="product-subtitle">Night Summer Dresses</div>
+                                            <div class="product-except">
+                                                Trying something new is never pretty. But it is pretty awesome. Because no matter how many times.
+                                            </div>
                                         </div>
-                                        <div class="product-comment-count">13</div>
                                     </div>
+                                    <div class="product-title">Long Fit T-shirt</div>
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-10.jpg" alt="">
-                                        <button class="product-fav" aria-label="Добавить в избранное"></button>
-                                    </div>
-                                    <div class="d-flex align-items-start justify-content-between">
-                                        <div class="product-title">Jersey Graphic Tee Dolce</div>
-                                        <div class="product-rating">5</div>
-                                    </div>
-                                    <div class="product-except">
-                                        Краткое описание
-                                    </div>
-                                    <div class="product-info d-flex align-items-center justify-content-between mt-3">
-                                        <div class="product-rate">
-                                            <span></span>
-                                            <span></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
+                                        <div class="product-info">
+                                            <div class="product-subtitle">Night Summer Dresses</div>
+                                            <div class="product-except">
+                                                Trying something new is never pretty. But it is pretty awesome. Because no matter how many times.
+                                            </div>
                                         </div>
-                                        <div class="product-comment-count">13</div>
                                     </div>
+                                    <div class="product-title">Jersey Graphic Tee Dolce</div>
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-detail-big-img1-1.jpg" alt="">
-                                        <button class="product-fav fill"></button>
-                                    </div>
-                                    <div class="d-flex align-items-start justify-content-between">
-                                        <div class="product-title">New Summer Collection</div>
-                                        <div class="product-rating">5</div>
-                                    </div>
-                                    <div class="product-except">
-                                        Краткое описание
-                                    </div>
-                                    <div class="product-info d-flex align-items-center justify-content-between mt-3">
-                                        <div class="product-rate">
-                                            <span></span>
-                                            <span></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
+                                        <div class="product-info">
+                                            <div class="product-subtitle">Night Summer Dresses</div>
+                                            <div class="product-except">
+                                                Trying something new is never pretty. But it is pretty awesome. Because no matter how many times.
+                                            </div>
                                         </div>
-                                        <div class="product-comment-count">13</div>
                                     </div>
+                                    <div class="product-title">New Summer Collection</div>
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col-6 col-md-4 col-lg-3">
                                 <div class="product-item">
                                     <div class="product-image">
                                         <img src="https://html.cwsthemes.com/liami/assets/images/resources/product-img1-14.jpg" alt="">
-                                        <button class="product-fav" aria-label="Добавить в избранное"></button>
-                                    </div>
-                                    <div class="d-flex align-items-start justify-content-between">
-                                        <div class="product-title">Grown cotton T-shirt</div>
-                                        <div class="product-rating">5</div>
-                                    </div>
-                                    <div class="product-except">
-                                        Краткое описание
-                                    </div>
-                                    <div class="product-info d-flex align-items-center justify-content-between mt-3">
-                                        <div class="product-rate">
-                                            <span></span>
-                                            <span></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
-                                            <span class="fill"></span>
+                                        <div class="product-info">
+                                            <div class="product-subtitle">Night Summer Dresses</div>
+                                            <div class="product-except">
+                                                Trying something new is never pretty. But it is pretty awesome. Because no matter how many times.
+                                            </div>
                                         </div>
-                                        <div class="product-comment-count">13</div>
                                     </div>
+                                    <div class="product-title">Grown cotton T-shirt</div>
                                     <a href="#" class="stretched-link"></a>
                                 </div>
                             </div>
                         </div>
-                        <!-- Product List End //-->
+                        <!-- Showroom Product List End //-->
 
                         <!-- Pagination Start //-->
                         <ul class="pagination">
@@ -841,26 +650,6 @@
                         }
                     ]
                 })
-            
-                $(".filter-touch").swipe( {
-                    //Generic swipe handler for all directions
-                    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-                        if (direction == 'up') {
-                            $(this).parents('.product-filter').css({
-                                top: 'auto',
-                                bottom: 0
-                            })
-                        }
-                        else if (direction == 'down') {
-                            $(this).parents('.product-filter').css({
-                                top: 'calc(100% - 70px)',
-                                bottom: 0
-                            })
-                        }
-                    },
-                    //Default is 75px, set to 0 for demo so any distance triggers swipe
-                    threshold: 0
-                });
             })
         })(jQuery)
 
