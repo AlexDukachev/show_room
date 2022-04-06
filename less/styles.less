@@ -2505,7 +2505,7 @@ main {
                             color: #383530;
                             display: flex;
                             align-items: center;
-                            
+
                             @media (min-width: 320px) and (max-width: 767px) {
                                 justify-content: space-between;
                             }
@@ -2585,6 +2585,62 @@ main {
 
                 @media (min-width: 768px) and (max-width: 1024px) {
                     padding: 40px 40px 40px 18px;
+                }
+
+                .showroom-list {
+                    overflow: hidden;
+                    margin-bottom: 44px;
+
+                    ul {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        list-style: none;
+                        padding-left: 0;
+                        margin-bottom: 0;
+
+                        .showroom-btn {
+                            font-family: 'Playfair Display';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: #383530;
+                            background-color: transparent;
+                            border-width: 0;
+                            border-bottom: 2px solid #F6F2F0;
+                            white-space: nowrap;
+                            padding: 5px 40px;
+
+                            &.active {
+                                border-color: #D0B49F;
+                            }
+                        }
+                    }
+                }
+
+                .showroom-small {
+                    margin-bottom: 40px;
+
+                    .showroom-scard {
+                        display: flex;
+                        align-items: center;
+
+                        .showroom-thumb {
+                            width: 50px;
+                            height: 50px;
+                            background-color: #525252;
+                            margin-right: 24px;
+                        }
+
+                        .showroom-name {
+                            font-family: 'Playfair Display';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 21px;
+                            color: #000000;
+                        }
+                    }
                 }
             }
 
