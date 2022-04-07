@@ -1865,7 +1865,13 @@ footer {
                 }
 
                 &:hover {
-                    .product-info { opacity: 1; }
+                    .product-info {
+                        opacity: 1;
+
+                        @media (min-width: 320px) and (max-width: 540px) {
+                            display: none;
+                        }
+                    }
                 }
 
                 .product-title {
