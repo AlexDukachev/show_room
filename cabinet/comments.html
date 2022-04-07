@@ -163,16 +163,20 @@
                 <main class="content">
                     <!-- Showroom List Start \\-->
                     <div class="showroom-list">
-                        <ul>
-                            <li><button class="showroom-btn active">Название шоурума</button></li>
-                            <li><button class="showroom-btn">Название шоурума</button></li>
-                            <li><button class="showroom-btn">Название шоурума</button></li>
-                            <li><button class="showroom-btn">Название шоурума</button></li>
-                            <li><button class="showroom-btn">Название шоурума</button></li>
-                            <li><button class="showroom-btn">Название шоурума</button></li>
-                            <li><button class="showroom-btn">Название шоурума</button></li>
-                            <li><button class="showroom-btn">Название шоурума</button></li>
-                        </ul>
+                        <button class="arrow-list prev-list"></button>
+                        <div class="scroll-list">
+                            <ul>
+                                <li class="active"><button class="showroom-btn">Название шоурума</button></li>
+                                <li><button class="showroom-btn">Название шоурума ab</button></li>
+                                <li><button class="showroom-btn">Название шоурума abc</button></li>
+                                <li><button class="showroom-btn">Название шоурума abcd</button></li>
+                                <li><button class="showroom-btn">Название шоурума abcde</button></li>
+                                <li><button class="showroom-btn">Название шоурума abcdef</button></li>
+                                <li><button class="showroom-btn">Название шоурума abcdefg</button></li>
+                                <li><button class="showroom-btn">Название шоурума abcdefgk</button></li>
+                            </ul>
+                        </div>
+                        <button class="arrow-list next-list"></button>
                     </div>
                     <!-- Showroom List End \\-->
 
@@ -187,139 +191,137 @@
 
                     <!-- Comments Start \\-->
                     <div class="comment-wrapper mt-4">
-                        <div class="container">
-                            <!-- Comments Start //-->
-                            <div class="comment-list">
-                                <ul>
-                                    <!-- comment item -->
-                                    <li class="comment-row">
-                                        <div class="comment-item">
-                                            <div class="comment-avatar"></div>
-                                            <div class="comment-info">
-                                                <div class="comment-header">
-                                                    <div class="d-flex flex-column flex-md-row">
-                                                        <div class="comment-author">Логин пользователя</div>
-                                                        <div class="comment-date">10:20 6 июля 2021</div>
-                                                    </div>
-                                                    <ul class="comment-option">
-                                                        <li><button class="option-edit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8603 4.71026C17.0855 4.48508 17.3528 4.30646 17.647 4.18459C17.9413 4.06272 18.2566 4 18.575 4C18.8935 4 19.2088 4.06272 19.503 4.18459C19.7972 4.30646 20.0646 4.48508 20.2897 4.71026C20.5149 4.93543 20.6935 5.20276 20.8154 5.49697C20.9373 5.79118 21 6.10651 21 6.42497C21 6.74342 20.9373 7.05875 20.8154 7.35296C20.6935 7.64717 20.5149 7.9145 20.2897 8.13968L8.71545 19.714L4 21L5.28603 16.2845L11.0732 10.4974L16.8603 4.71026Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
-                                                        <li><button class="option-delete"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.63623H5H21" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6.6V4.8C8 4.32261 8.21071 3.86477 8.58579 3.52721C8.96086 3.18964 9.46957 3 10 3H14C14.5304 3 15.0391 3.18964 15.4142 3.52721C15.7893 3.86477 16 4.32261 16 4.8V6.6M19 6.6V19.2C19 19.6774 18.7893 20.1352 18.4142 20.4728C18.0391 20.8104 17.5304 21 17 21H7C6.46957 21 5.96086 20.8104 5.58579 20.4728C5.21071 20.1352 5 19.6774 5 19.2V6.6H19Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
-                                                    </ul>
+                        <!-- Comments Start //-->
+                        <div class="comment-list">
+                            <ul>
+                                <!-- comment item -->
+                                <li class="comment-row">
+                                    <div class="comment-item">
+                                        <div class="comment-avatar"></div>
+                                        <div class="comment-info">
+                                            <div class="comment-header">
+                                                <div class="d-flex flex-column flex-md-row">
+                                                    <div class="comment-author">Логин пользователя</div>
+                                                    <div class="comment-date">10:20 6 июля 2021</div>
                                                 </div>
-                                                <div class="comment-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam laboriosam consequatur perspiciatis? Ratione molestias excepturi libero sed tempore culpa iste quis modi, perferendis natus maiores. Expedita incidunt doloremque laboriosam?</p>
-                                                </div>
-                                                <div class="comment-footer">
-                                                    <button class="option-reply">Ответить</button>
-                                                    <ul class="option-rate">
-                                                        <li><button class="option-like" aria-label="like">0</button></li>
-                                                        <li><button class="option-dislike" aria-label="dislike">0</button></li>
-                                                    </ul>
-                                                </div>
+                                                <ul class="comment-option">
+                                                    <li><button class="option-edit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8603 4.71026C17.0855 4.48508 17.3528 4.30646 17.647 4.18459C17.9413 4.06272 18.2566 4 18.575 4C18.8935 4 19.2088 4.06272 19.503 4.18459C19.7972 4.30646 20.0646 4.48508 20.2897 4.71026C20.5149 4.93543 20.6935 5.20276 20.8154 5.49697C20.9373 5.79118 21 6.10651 21 6.42497C21 6.74342 20.9373 7.05875 20.8154 7.35296C20.6935 7.64717 20.5149 7.9145 20.2897 8.13968L8.71545 19.714L4 21L5.28603 16.2845L11.0732 10.4974L16.8603 4.71026Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
+                                                    <li><button class="option-delete"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.63623H5H21" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6.6V4.8C8 4.32261 8.21071 3.86477 8.58579 3.52721C8.96086 3.18964 9.46957 3 10 3H14C14.5304 3 15.0391 3.18964 15.4142 3.52721C15.7893 3.86477 16 4.32261 16 4.8V6.6M19 6.6V19.2C19 19.6774 18.7893 20.1352 18.4142 20.4728C18.0391 20.8104 17.5304 21 17 21H7C6.46957 21 5.96086 20.8104 5.58579 20.4728C5.21071 20.1352 5 19.6774 5 19.2V6.6H19Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
+                                                </ul>
+                                            </div>
+                                            <div class="comment-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam laboriosam consequatur perspiciatis? Ratione molestias excepturi libero sed tempore culpa iste quis modi, perferendis natus maiores. Expedita incidunt doloremque laboriosam?</p>
+                                            </div>
+                                            <div class="comment-footer">
+                                                <button class="option-reply">Ответить</button>
+                                                <ul class="option-rate">
+                                                    <li><button class="option-like" aria-label="like">0</button></li>
+                                                    <li><button class="option-dislike" aria-label="dislike">0</button></li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <ul>
-                                            <!-- comment item -->
-                                            <li class="comment-row">
-                                                <div class="comment-item">
-                                                    <div class="comment-avatar"></div>
-                                                    <div class="comment-info">
-                                                        <div class="comment-header">
-                                                            <div class="d-flex flex-column flex-md-row">
-                                                                <div class="comment-author">Логин пользователя</div>
-                                                                <div class="comment-date">10:20 6 июля 2021</div>
-                                                            </div>
-                                                            <ul class="comment-option">
-                                                                <li><button class="option-edit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8603 4.71026C17.0855 4.48508 17.3528 4.30646 17.647 4.18459C17.9413 4.06272 18.2566 4 18.575 4C18.8935 4 19.2088 4.06272 19.503 4.18459C19.7972 4.30646 20.0646 4.48508 20.2897 4.71026C20.5149 4.93543 20.6935 5.20276 20.8154 5.49697C20.9373 5.79118 21 6.10651 21 6.42497C21 6.74342 20.9373 7.05875 20.8154 7.35296C20.6935 7.64717 20.5149 7.9145 20.2897 8.13968L8.71545 19.714L4 21L5.28603 16.2845L11.0732 10.4974L16.8603 4.71026Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
-                                                                <li><button class="option-delete"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.63623H5H21" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6.6V4.8C8 4.32261 8.21071 3.86477 8.58579 3.52721C8.96086 3.18964 9.46957 3 10 3H14C14.5304 3 15.0391 3.18964 15.4142 3.52721C15.7893 3.86477 16 4.32261 16 4.8V6.6M19 6.6V19.2C19 19.6774 18.7893 20.1352 18.4142 20.4728C18.0391 20.8104 17.5304 21 17 21H7C6.46957 21 5.96086 20.8104 5.58579 20.4728C5.21071 20.1352 5 19.6774 5 19.2V6.6H19Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
-                                                            </ul>
+                                    </div>
+                                    <ul>
+                                        <!-- comment item -->
+                                        <li class="comment-row">
+                                            <div class="comment-item">
+                                                <div class="comment-avatar"></div>
+                                                <div class="comment-info">
+                                                    <div class="comment-header">
+                                                        <div class="d-flex flex-column flex-md-row">
+                                                            <div class="comment-author">Логин пользователя</div>
+                                                            <div class="comment-date">10:20 6 июля 2021</div>
                                                         </div>
-                                                        <div class="comment-body">
-                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam laboriosam consequatur perspiciatis? Ratione molestias excepturi libero sed tempore culpa iste quis modi, perferendis natus maiores. Expedita incidunt doloremque laboriosam?</p>
-                                                        </div>
-                                                        <div class="comment-footer">
-                                                            <button class="option-reply">Ответить</button>
-                                                            <ul class="option-rate">
-                                                                <li><button class="option-like" aria-label="like">0</button></li>
-                                                                <li><button class="option-dislike" aria-label="dislike">0</button></li>
-                                                            </ul>
-                                                        </div>
+                                                        <ul class="comment-option">
+                                                            <li><button class="option-edit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8603 4.71026C17.0855 4.48508 17.3528 4.30646 17.647 4.18459C17.9413 4.06272 18.2566 4 18.575 4C18.8935 4 19.2088 4.06272 19.503 4.18459C19.7972 4.30646 20.0646 4.48508 20.2897 4.71026C20.5149 4.93543 20.6935 5.20276 20.8154 5.49697C20.9373 5.79118 21 6.10651 21 6.42497C21 6.74342 20.9373 7.05875 20.8154 7.35296C20.6935 7.64717 20.5149 7.9145 20.2897 8.13968L8.71545 19.714L4 21L5.28603 16.2845L11.0732 10.4974L16.8603 4.71026Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
+                                                            <li><button class="option-delete"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.63623H5H21" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6.6V4.8C8 4.32261 8.21071 3.86477 8.58579 3.52721C8.96086 3.18964 9.46957 3 10 3H14C14.5304 3 15.0391 3.18964 15.4142 3.52721C15.7893 3.86477 16 4.32261 16 4.8V6.6M19 6.6V19.2C19 19.6774 18.7893 20.1352 18.4142 20.4728C18.0391 20.8104 17.5304 21 17 21H7C6.46957 21 5.96086 20.8104 5.58579 20.4728C5.21071 20.1352 5 19.6774 5 19.2V6.6H19Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
+                                                        </ul>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <!-- comment item -->
-                                            <li class="comment-row">
-                                                <div class="comment-item">
-                                                    <div class="comment-avatar"></div>
-                                                    <div class="comment-info">
-                                                        <div class="comment-header">
-                                                            <div class="d-flex flex-column flex-md-row">
-                                                                <div class="comment-author">Логин пользователя</div>
-                                                                <div class="comment-date">10:20 6 июля 2021</div>
-                                                            </div>
-                                                            <ul class="comment-option">
-                                                                <li><button class="option-edit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8603 4.71026C17.0855 4.48508 17.3528 4.30646 17.647 4.18459C17.9413 4.06272 18.2566 4 18.575 4C18.8935 4 19.2088 4.06272 19.503 4.18459C19.7972 4.30646 20.0646 4.48508 20.2897 4.71026C20.5149 4.93543 20.6935 5.20276 20.8154 5.49697C20.9373 5.79118 21 6.10651 21 6.42497C21 6.74342 20.9373 7.05875 20.8154 7.35296C20.6935 7.64717 20.5149 7.9145 20.2897 8.13968L8.71545 19.714L4 21L5.28603 16.2845L11.0732 10.4974L16.8603 4.71026Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
-                                                                <li><button class="option-delete"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.63623H5H21" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6.6V4.8C8 4.32261 8.21071 3.86477 8.58579 3.52721C8.96086 3.18964 9.46957 3 10 3H14C14.5304 3 15.0391 3.18964 15.4142 3.52721C15.7893 3.86477 16 4.32261 16 4.8V6.6M19 6.6V19.2C19 19.6774 18.7893 20.1352 18.4142 20.4728C18.0391 20.8104 17.5304 21 17 21H7C6.46957 21 5.96086 20.8104 5.58579 20.4728C5.21071 20.1352 5 19.6774 5 19.2V6.6H19Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-body">
-                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam laboriosam consequatur perspiciatis? Ratione molestias excepturi libero sed tempore culpa iste quis modi, perferendis natus maiores. Expedita incidunt doloremque laboriosam?</p>
-                                                        </div>
-                                                        <div class="comment-footer">
-                                                            <button class="option-reply">Ответить</button>
-                                                            <ul class="option-rate">
-                                                                <li><button class="option-like" aria-label="like">0</button></li>
-                                                                <li><button class="option-dislike" aria-label="dislike">0</button></li>
-                                                            </ul>
-                                                        </div>
+                                                    <div class="comment-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam laboriosam consequatur perspiciatis? Ratione molestias excepturi libero sed tempore culpa iste quis modi, perferendis natus maiores. Expedita incidunt doloremque laboriosam?</p>
                                                     </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <!-- comment item -->
-                                    <li class="comment-row">
-                                        <div class="comment-item">
-                                            <div class="comment-avatar"></div>
-                                            <div class="comment-info">
-                                                <div class="comment-header">
-                                                    <div class="d-flex flex-column flex-md-row">
-                                                        <div class="comment-author">Логин пользователя</div>
-                                                        <div class="comment-date">10:20 6 июля 2021</div>
+                                                    <div class="comment-footer">
+                                                        <button class="option-reply">Ответить</button>
+                                                        <ul class="option-rate">
+                                                            <li><button class="option-like" aria-label="like">0</button></li>
+                                                            <li><button class="option-dislike" aria-label="dislike">0</button></li>
+                                                        </ul>
                                                     </div>
-                                                    <ul class="comment-option">
-                                                        <li><button class="option-edit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8603 4.71026C17.0855 4.48508 17.3528 4.30646 17.647 4.18459C17.9413 4.06272 18.2566 4 18.575 4C18.8935 4 19.2088 4.06272 19.503 4.18459C19.7972 4.30646 20.0646 4.48508 20.2897 4.71026C20.5149 4.93543 20.6935 5.20276 20.8154 5.49697C20.9373 5.79118 21 6.10651 21 6.42497C21 6.74342 20.9373 7.05875 20.8154 7.35296C20.6935 7.64717 20.5149 7.9145 20.2897 8.13968L8.71545 19.714L4 21L5.28603 16.2845L11.0732 10.4974L16.8603 4.71026Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
-                                                        <li><button class="option-delete"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.63623H5H21" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6.6V4.8C8 4.32261 8.21071 3.86477 8.58579 3.52721C8.96086 3.18964 9.46957 3 10 3H14C14.5304 3 15.0391 3.18964 15.4142 3.52721C15.7893 3.86477 16 4.32261 16 4.8V6.6M19 6.6V19.2C19 19.6774 18.7893 20.1352 18.4142 20.4728C18.0391 20.8104 17.5304 21 17 21H7C6.46957 21 5.96086 20.8104 5.58579 20.4728C5.21071 20.1352 5 19.6774 5 19.2V6.6H19Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="comment-body">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam laboriosam consequatur perspiciatis? Ratione molestias excepturi libero sed tempore culpa iste quis modi, perferendis natus maiores. Expedita incidunt doloremque laboriosam?</p>
-                                                </div>
-                                                <div class="comment-footer">
-                                                    <button class="option-reply">Ответить</button>
-                                                    <ul class="option-rate">
-                                                        <li><button class="option-like" aria-label="like">0</button></li>
-                                                        <li><button class="option-dislike" aria-label="dislike">0</button></li>
-                                                    </ul>
                                                 </div>
                                             </div>
+                                        </li>
+                                        <!-- comment item -->
+                                        <li class="comment-row">
+                                            <div class="comment-item">
+                                                <div class="comment-avatar"></div>
+                                                <div class="comment-info">
+                                                    <div class="comment-header">
+                                                        <div class="d-flex flex-column flex-md-row">
+                                                            <div class="comment-author">Логин пользователя</div>
+                                                            <div class="comment-date">10:20 6 июля 2021</div>
+                                                        </div>
+                                                        <ul class="comment-option">
+                                                            <li><button class="option-edit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8603 4.71026C17.0855 4.48508 17.3528 4.30646 17.647 4.18459C17.9413 4.06272 18.2566 4 18.575 4C18.8935 4 19.2088 4.06272 19.503 4.18459C19.7972 4.30646 20.0646 4.48508 20.2897 4.71026C20.5149 4.93543 20.6935 5.20276 20.8154 5.49697C20.9373 5.79118 21 6.10651 21 6.42497C21 6.74342 20.9373 7.05875 20.8154 7.35296C20.6935 7.64717 20.5149 7.9145 20.2897 8.13968L8.71545 19.714L4 21L5.28603 16.2845L11.0732 10.4974L16.8603 4.71026Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
+                                                            <li><button class="option-delete"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.63623H5H21" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6.6V4.8C8 4.32261 8.21071 3.86477 8.58579 3.52721C8.96086 3.18964 9.46957 3 10 3H14C14.5304 3 15.0391 3.18964 15.4142 3.52721C15.7893 3.86477 16 4.32261 16 4.8V6.6M19 6.6V19.2C19 19.6774 18.7893 20.1352 18.4142 20.4728C18.0391 20.8104 17.5304 21 17 21H7C6.46957 21 5.96086 20.8104 5.58579 20.4728C5.21071 20.1352 5 19.6774 5 19.2V6.6H19Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="comment-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam laboriosam consequatur perspiciatis? Ratione molestias excepturi libero sed tempore culpa iste quis modi, perferendis natus maiores. Expedita incidunt doloremque laboriosam?</p>
+                                                    </div>
+                                                    <div class="comment-footer">
+                                                        <button class="option-reply">Ответить</button>
+                                                        <ul class="option-rate">
+                                                            <li><button class="option-like" aria-label="like">0</button></li>
+                                                            <li><button class="option-dislike" aria-label="dislike">0</button></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- comment item -->
+                                <li class="comment-row">
+                                    <div class="comment-item">
+                                        <div class="comment-avatar"></div>
+                                        <div class="comment-info">
+                                            <div class="comment-header">
+                                                <div class="d-flex flex-column flex-md-row">
+                                                    <div class="comment-author">Логин пользователя</div>
+                                                    <div class="comment-date">10:20 6 июля 2021</div>
+                                                </div>
+                                                <ul class="comment-option">
+                                                    <li><button class="option-edit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8603 4.71026C17.0855 4.48508 17.3528 4.30646 17.647 4.18459C17.9413 4.06272 18.2566 4 18.575 4C18.8935 4 19.2088 4.06272 19.503 4.18459C19.7972 4.30646 20.0646 4.48508 20.2897 4.71026C20.5149 4.93543 20.6935 5.20276 20.8154 5.49697C20.9373 5.79118 21 6.10651 21 6.42497C21 6.74342 20.9373 7.05875 20.8154 7.35296C20.6935 7.64717 20.5149 7.9145 20.2897 8.13968L8.71545 19.714L4 21L5.28603 16.2845L11.0732 10.4974L16.8603 4.71026Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
+                                                    <li><button class="option-delete"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.63623H5H21" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6.6V4.8C8 4.32261 8.21071 3.86477 8.58579 3.52721C8.96086 3.18964 9.46957 3 10 3H14C14.5304 3 15.0391 3.18964 15.4142 3.52721C15.7893 3.86477 16 4.32261 16 4.8V6.6M19 6.6V19.2C19 19.6774 18.7893 20.1352 18.4142 20.4728C18.0391 20.8104 17.5304 21 17 21H7C6.46957 21 5.96086 20.8104 5.58579 20.4728C5.21071 20.1352 5 19.6774 5 19.2V6.6H19Z" stroke="#A4A4A4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>
+                                                </ul>
+                                            </div>
+                                            <div class="comment-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam laboriosam consequatur perspiciatis? Ratione molestias excepturi libero sed tempore culpa iste quis modi, perferendis natus maiores. Expedita incidunt doloremque laboriosam?</p>
+                                            </div>
+                                            <div class="comment-footer">
+                                                <button class="option-reply">Ответить</button>
+                                                <ul class="option-rate">
+                                                    <li><button class="option-like" aria-label="like">0</button></li>
+                                                    <li><button class="option-dislike" aria-label="dislike">0</button></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Comments End //-->
-
-                            <!-- Pagination Start //-->
-                            <ul class="pagination">
-                                <!-- <li class="disabled"><span>Предыдущая</span></li> -->
-                                <li><span>1</span></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">Следующая</a></li>
+                                    </div>
+                                </li>
                             </ul>
-                            <!-- Pagination End //-->
                         </div>
+                        <!-- Comments End //-->
+
+                        <!-- Pagination Start //-->
+                        <ul class="pagination">
+                            <!-- <li class="disabled"><span>Предыдущая</span></li> -->
+                            <li><span>1</span></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">Следующая</a></li>
+                        </ul>
+                        <!-- Pagination End //-->
                     </div>
                     <!-- Comments End \\-->
                 </main>
@@ -455,6 +457,122 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+        const showroomListElement = document.querySelector(".showroom-list")
+
+        let prev, next, current
+
+        showroomListElement.querySelectorAll('.scroll-list li:not(.active)').forEach((el) => {
+            el.addEventListener('click', (e) => {
+                e.preventDefault()
+
+                current = showroomListElement.querySelector('.scroll-list .active')
+                next = el
+                prev = el.previousElementSibling
+
+                current.classList.remove('active')
+                el.classList.add('active')
+                showroomListElement.querySelector('.scroll-list').scrollLeft = el.offsetLeft - 24
+
+                if (showroomListElement.querySelector('.scroll-list').scrollWidth > el.offsetLeft + el.offsetWidth) {
+                    showroomListElement.querySelector('.next-list').style.display = 'block'
+                    showroomListElement.querySelector('.prev-list').style.display = 'block'
+                }
+
+                if (showroomListElement.querySelector('.scroll-list').scrollWidth < el.offsetLeft + el.offsetWidth) {
+                    showroomListElement.querySelector('.next-list').style.display = 'none'
+                }
+
+                document.querySelector('.showroom-scard .showroom-name').innerText = el.querySelector('button').innerText
+            })
+        })
+
+        showroomListElement.addEventListener('wheel', (event) => {
+            touchScroll(event)
+        })
+
+        function touchScroll(event) {
+            event.preventDefault()
+
+            current = showroomListElement.querySelector('.scroll-list .active')
+            next = showroomListElement.querySelector('.scroll-list .active').nextElementSibling
+            prev = showroomListElement.querySelector('.scroll-list .active').previousElementSibling
+
+            if (event.deltaY > 0) {
+                if (next) {
+                    current.classList.remove('active')
+                    next.classList.add('active')
+                    
+                    showroomListElement.querySelector('.prev-list').style.display = 'block'
+                    showroomListElement.querySelector('.scroll-list').scrollLeft = next.offsetLeft - 24
+
+                    if (showroomListElement.querySelector('.scroll-list').scrollWidth < next.offsetLeft + next.offsetWidth) {
+                        showroomListElement.querySelector('.next-list').style.display = 'none'
+                    }
+
+                    xhrRequest(next)
+                }
+            }
+            else {
+                if (prev) {
+                    current.classList.remove('active')
+                    prev.classList.add('active')
+
+                    showroomListElement.querySelector('.scroll-list').scrollLeft = prev.offsetLeft - 24
+
+                    if (prev.offsetLeft - 24 == 0) {
+                        showroomListElement.querySelector('.prev-list').style.display = 'none'
+                    }
+
+                    if (showroomListElement.querySelector('.scroll-list').scrollWidth > prev.offsetLeft + prev.offsetWidth) {
+                        showroomListElement.querySelector('.next-list').style.display = 'block'
+                    }
+
+                    xhrRequest(prev)
+                }
+            }
+
+        }
+
+        showroomListElement.querySelectorAll('.arrow-list').forEach((arrow) => {
+            arrow.addEventListener('click', (e) => {
+                e.preventDefault()
+
+                current = showroomListElement.querySelector('.scroll-list .active')
+                next = showroomListElement.querySelector('.scroll-list .active').nextElementSibling
+                prev = showroomListElement.querySelector('.scroll-list .active').previousElementSibling
+
+                if (arrow.classList.contains('next-list')) {
+                    current.classList.remove('active')
+                    next.classList.add('active')
+                    
+                    showroomListElement.querySelector('.prev-list').style.display = 'block'
+                    showroomListElement.querySelector('.scroll-list').scrollLeft = next.offsetLeft - 24
+
+                    if (showroomListElement.querySelector('.scroll-list').scrollWidth < next.offsetLeft + next.offsetWidth) {
+                        showroomListElement.querySelector('.next-list').style.display = 'none'
+                    }
+
+                    xhrRequest(next)
+                }
+                else {
+                    current.classList.remove('active')
+                    prev.classList.add('active')
+
+                    showroomListElement.querySelector('.scroll-list').scrollLeft = prev.offsetLeft - 24
+
+                    if (prev.offsetLeft - 24 == 0) {
+                        showroomListElement.querySelector('.prev-list').style.display = 'none'
+                    }
+
+                    if (showroomListElement.querySelector('.scroll-list').scrollWidth > prev.offsetLeft + prev.offsetWidth) {
+                        showroomListElement.querySelector('.next-list').style.display = 'block'
+                    }
+
+                    xhrRequest(prev)
+                }
+            })
+        })
+
         document.querySelectorAll('[data-toggle="modal"]').forEach((btn) => {
             btn.addEventListener('click', (e) => {
                 e.preventDefault()
@@ -483,6 +601,11 @@
                 })
             })
         })
+
+        function xhrRequest(el) {
+            document.querySelector('.showroom-scard .showroom-name').innerText = el.querySelector('button').innerText
+            console.log('XHR request to change showroom data and comments')
+        }
     </script>
 </body>
 </html>
