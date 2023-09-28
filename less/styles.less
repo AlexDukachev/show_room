@@ -841,7 +841,11 @@ footer {
 }
 
 .page-wrapper {
-    margin-bottom: 96px;
+    margin-bottom: 35px;
+
+    @media (min-width: 768px) {
+        margin-top: 96px;
+    }
 
     header {
         position: relative;
@@ -2007,6 +2011,14 @@ footer {
                 @media (min-width: 1280px) {
                     font-size: 18px;
                     line-height: 1.5;
+                }
+            }
+
+            .btn {
+                margin-top: 35px;
+
+                @media (min-width: 768px) {
+                    margin-top: 96px;
                 }
             }
         }
