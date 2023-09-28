@@ -382,10 +382,15 @@ p {
         counter-reset: item;
         padding-left: 0;
         margin-left: 0;
+        margin-bottom: 0;
 
         li {
             display: block;
             margin-bottom: 6px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
             
             &.parent {
                 strong {
