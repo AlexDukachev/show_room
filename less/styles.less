@@ -1943,6 +1943,86 @@ footer {
                 }
             }
         }
+
+        &.about {
+            .about-img {
+                width: 54px;
+
+                @media (min-width: 768px) {
+                    width: 100px;
+                }
+
+                @media (min-width: 1280px) {
+                    width: 150px;
+                }
+            }
+
+            h3 {
+                color: #000;
+                font-family: 'Playfair Display', sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1;
+
+                @media (min-width: 768px) {
+                    font-size: 21px;
+                }
+
+                @media (min-width: 1280px) {
+                    font-size: 24px;
+                }
+            }
+
+            p {
+                color: #000;
+                font-family: 'Playfair Display', sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.2;
+
+                @media (min-width: 768px) {
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
+
+                @media (min-width: 1280px) {
+                    font-size: 18px;
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        .btn-75 {
+            max-width: 75%;
+            margin: 0 auto;
+            color: #FFF;
+            text-align: center;
+            font-family: 'Playfair Display', sans-serif;
+            font-size: 31px;
+            line-height: 38px;
+            letter-spacing: 0.31px;
+
+            @media (max-width: 1280px) {
+                font-size: 20px;
+                line-height: 25px;
+                letter-spacing: 0.2px;
+            }
+
+            @media (max-width: 1024px) {
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+            }
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+                font-size: 12px;
+                line-height: 15px;
+                padding: 8px 0;
+            }
+        }
     }
 
     .showroom-contacts-wrapper {

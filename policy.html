@@ -436,39 +436,6 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/jquery.touchSwipe.min.js"></script>
     <script>
-        (function($) {
-            $(document).ready(() => {
-                $('.related-list').slick({
-                    speed: 300,
-                    slidesToShow: 6,
-                    slidesToScroll: 1,
-                    rows: 0,
-                    nextArrow: '<button class="slick-next slick-arrow" aria-label="Слайдер вперед" type="button"></button>',
-                    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Слайдер назад" type="button"></button>',
-                    responsive: [
-                        {
-                            breakpoint: 1024,
-                            settings: {
-                                slidesToShow: 3,
-                            }
-                        },
-                        {
-                            breakpoint: 600,
-                            settings: {
-                                slidesToShow: 2,
-                            }
-                        },
-                        {
-                            breakpoint: 400,
-                            settings: {
-                                slidesToShow: 2,
-                            }
-                        }
-                    ]
-                })
-            })
-        })(jQuery)
-
         document.querySelectorAll('.input-password').forEach((input) => {
             input.querySelector('.show-password').addEventListener('click', (e) => {
                 if (input.querySelector('input').type == 'password') input.querySelector('input').setAttribute('type', 'text')
