@@ -377,6 +377,59 @@ p {
 }
 
 // Themes
+.policy {
+    ol {
+        counter-reset: item;
+        padding-left: 0;
+        margin-left: 0;
+
+        li {
+            display: block;
+            margin-bottom: 6px;
+            
+            &.parent {
+                strong {
+                    margin-bottom: 24px;
+                    display: inline-block;
+                }
+
+                & + .parent {
+                    margin-top: 24px;
+                }
+            }
+
+            &.child {
+                padding-left: 24px;
+            }
+    
+            &:not(.child) strong {
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                color: #000000;
+
+                &:before {
+                    content: counters(item, ".") ". ";
+                    counter-increment: item;
+                    font-family: 'Roboto', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #000000;
+                }
+            }
+
+            &:not(.parent):before {
+                content: counters(item, ".") ". ";
+                counter-increment: item;
+            }
+        }
+    }
+}
+
 .product-filter {
     margin-bottom: 64px;
 
